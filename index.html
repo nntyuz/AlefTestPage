@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alef-Page</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-wrapper w-container flex">
+      <div class="logo">
+        <svg width="78" height="52" viewBox="0 0 78 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M63.0559 15.8816L54.2119 15.8949L27.8012 40.7924H10.0354V23.4594L34.2348 0.848755L17.993 0.899335L0 17.6627V51.1512H34.0283L63.0418 23.5688L63.0559 15.8816Z" fill="white"/>
+          <path d="M43.9716 0.848755L14.9582 28.4319L14.9449 36.1183L23.788 36.1051L50.1987 11.2076H67.9645V28.5405L43.7652 51.1512L60.0069 51.1014L77.9999 34.3381V0.848755H43.9716Z" fill="white"/>
+          </svg>
+      </div>
+      <div class="nav">
+        <a href="#" class="nav-link">Main</a>
+        <a href="#" class="nav-link">Gallery</a>
+        <a href="#" class="nav-link">News</a>
+        <a href="#" class="nav-link">Profile</a>
+      </div>
+      <div class="phone flex">
+        <div class="burger">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd">
+            <path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"/>
+            <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/>
+          </svg>
+        </div>
+        <a href="#" class="phone-number">+544 3490 00000</a>
+        Звони скорее!
+      </div>
+    </div>
+    <h1 class="header-title w-container">Найдено 349 котов</h1>
+  </header>
+  <div class="btn-container w-container flex">
+    <button class="scroll-btn flex">
+      <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+        <path d="M8.29764 3.99969L0.287559 12.0099C0.102145 12.1952 -8.06437e-08 12.4425 -6.91167e-08 12.7062C-5.75898e-08 12.9699 0.102145 13.2172 0.287559 13.4025L0.87731 13.9924C1.2616 14.3762 1.88618 14.3762 2.26988 13.9924L8.99627 7.26601L15.7301 13.9999C15.9155 14.1851 16.1627 14.2874 16.4263 14.2874C16.6901 14.2874 16.9373 14.1851 17.1228 13.9999L17.7124 13.41C17.8979 13.2245 18 12.9774 18 12.7137C18 12.45 17.8979 12.2026 17.7124 12.0174L9.69504 3.99969C9.50904 3.81399 9.26071 3.71199 8.99671 3.71257C8.73169 3.71199 8.48349 3.81399 8.29764 3.99969Z"/>
+        </g>
+        <defs>
+        <clipPath id="clip0">
+        <rect width="18" height="18" transform="translate(0 18) rotate(-90)"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </button>
+  </div>
+  <main class="w-container">
+    <div class="breadcrumbs flex">
+      <div class="bc-txt">Сортировать по:</div>
+      <button class="bc-link" id="price-btn">
+        Цене
+        <svg id="price-svg" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.08529 8.66716L14.7604 1.99197C14.9149 1.83758 15 1.63148 15 1.41173C15 1.19197 14.9149 0.985877 14.7604 0.831488L14.2689 0.339907C13.9487 0.0200314 13.4282 0.0200314 13.1084 0.339907L7.5031 5.94523L1.89157 0.333687C1.73706 0.179298 1.53108 0.0940546 1.31145 0.0940546C1.09157 0.0940546 0.885598 0.179298 0.730966 0.333687L0.239628 0.825268C0.0851173 0.979779 -3.86242e-06 1.18575 -3.87202e-06 1.40551C-3.88163e-06 1.62526 0.0851173 1.83136 0.239628 1.98575L6.92079 8.66716C7.07579 8.82191 7.28274 8.90691 7.50274 8.90642C7.72359 8.90691 7.93042 8.82191 8.08529 8.66716Z" fill="black"/>
+        </svg>
+      </button>
+      <button class="bc-link" id="age-btn">
+        Возрасту
+        <svg id="age-svg" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.08529 8.66716L14.7604 1.99197C14.9149 1.83758 15 1.63148 15 1.41173C15 1.19197 14.9149 0.985877 14.7604 0.831488L14.2689 0.339907C13.9487 0.0200314 13.4282 0.0200314 13.1084 0.339907L7.5031 5.94523L1.89157 0.333687C1.73706 0.179298 1.53108 0.0940546 1.31145 0.0940546C1.09157 0.0940546 0.885598 0.179298 0.730966 0.333687L0.239628 0.825268C0.0851173 0.979779 -3.86242e-06 1.18575 -3.87202e-06 1.40551C-3.88163e-06 1.62526 0.0851173 1.83136 0.239628 1.98575L6.92079 8.66716C7.07579 8.82191 7.28274 8.90691 7.50274 8.90642C7.72359 8.90691 7.93042 8.82191 8.08529 8.66716Z" fill="black"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="content flex">
+      <div class="card">
+        <div class="img-block flex">
+          <img src="./img/cat-1.png" alt="Cat-1">
+          <div class="cards-elem odd flex">
+            <div class="tag flex">-40%</div>
+            <button class="like">
+              <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-title">Кот полосатый</div>
+          <div class="inf flex">
+            <div class="color">Коричневый <br>окрас</div>
+            <div class="cat-data flex">
+              <span class="data-title">2 мес.</span>
+              Возраст
+            </div>
+            <div class="cat-data flex">
+              <span class="data-title">4</span>
+              Кол-во лап
+            </div>
+          </div>
+          <div class="card-price">30 000 руб.</div>
+        </div>
+        <button class="btn-buy flex">Купить</button>
+      </div>
+
+      <div class="card">
+        <div class="img-block flex">
+          <img src="./img/cat-2.png" alt="Cat-2">
+          <div class="cards-elem flex">
+            <button class="like">
+              <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-title">Кот полосатый</div>
+          <div class="inf flex">
+            <div class="color">Коричневый <br>окрас</div>
+            <div class="cat-data flex">
+              <span class="data-title">2 мес.</span>
+              Возраст
+            </div>
+            <div class="cat-data flex">
+              <span class="data-title">4</span>
+              Кол-во лап
+            </div>
+          </div>
+          <div class="card-price">40 000 руб.</div>
+        </div>
+        <button class="btn-buy sell flex" disabled>Продан</button>
+      </div>
+
+      <div class="card">
+        <div class="img-block flex">
+          <img src="./img/cat-3.png" alt="Cat-3">
+          <div class="cards-elem flex">
+            <button class="like">
+              <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-title">Кот полосатый</div>
+          <div class="inf flex">
+            <div class="color">Коричневый <br>окрас</div>
+            <div class="cat-data flex">
+              <span class="data-title">2 мес.</span>
+              Возраст
+            </div>
+            <div class="cat-data flex">
+              <span class="data-title">4</span>
+              Кол-во лап
+            </div>
+          </div>
+          <div class="card-price">20 000 руб.</div>
+        </div>
+        <button class="btn-buy flex">Купить</button>
+      </div>
+
+      <div class="card">
+        <div class="img-block flex">
+          <img src="./img/cat-1.png" alt="Cat-1">
+          <div class="cards-elem flex">
+            <button class="like">
+              <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-title">Кот полосатый</div>
+          <div class="inf flex">
+            <div class="color">Коричневый <br>окрас</div>
+            <div class="cat-data flex">
+              <span class="data-title">2 мес.</span>
+              Возраст
+            </div>
+            <div class="cat-data flex">
+              <span class="data-title">4</span>
+              Кол-во лап
+            </div>
+          </div>
+          <div class="card-price">25 000 руб.</div>
+        </div>
+        <button class="btn-buy flex">Купить</button>
+      </div>
+
+      <div class="card">
+        <div class="img-block flex">
+          <img src="./img/cat-3.png" alt="Cat-3">
+          <div class="cards-elem odd flex">
+            <div class="tag flex">-40%</div>
+            <button class="like">
+              <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-title">Кот полосатый</div>
+          <div class="inf flex">
+            <div class="color">Коричневый <br>окрас</div>
+            <div class="cat-data flex">
+              <span class="data-title">2 мес.</span>
+              Возраст
+            </div>
+            <div class="cat-data flex">
+              <span class="data-title">4</span>
+              Кол-во лап
+            </div>
+          </div>
+          <div class="card-price">30 000 руб.</div>
+        </div>
+        <button class="btn-buy flex">Купить</button>
+      </div>
+
+      <div class="card">
+        <div class="img-block flex">
+          <img src="./img/cat-2.png" alt="Cat-2">
+          <div class="cards-elem flex">
+            <button class="like">
+              <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-title">Кот полосатый</div>
+          <div class="inf flex">
+            <div class="color">Коричневый <br>окрас</div>
+            <div class="cat-data flex">
+              <span class="data-title">2 мес.</span>
+              Возраст
+            </div>
+            <div class="cat-data flex">
+              <span class="data-title">4</span>
+              Кол-во лап
+            </div>
+          </div>
+          <div class="card-price">20 000 руб.</div>
+        </div>
+        <button class="btn-buy sell flex" disabled>Продан</button>
+      </div>
+
+    </div>
+    <div class="show-container flex">
+      <button class="show flex">Показать еще 20</button>
+    </div>
+  </main>
+  <div class="w-container">
+    <footer class="footer">
+      <div class=" footer-container flex">
+        <div class="offer">
+          <div class="offer-title">Успей купить</div>
+          <div class="offer-txt">Подпишись и успей<br>словить все акции</div>
+        </div>
+        <div class="mailing">
+          <div class="mailing-wrapper flex">
+            <input class="mailing-input" type="email" name="email" placeholder="Email">
+            <button class="mailing-btn flex">Подписаться</button>
+          </div>
+          <label class="subscribe flex">
+            Подписаться на новости
+            <input type="checkbox" name="checkbox">
+            <span class="checkmark flex">
+              <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5266 7.38757C4.07322 7.84096 3.33756 7.84096 2.8844 7.38757L0.340036 4.84315C-0.113345 4.38998 -0.113345 3.65431 0.340036 3.20114C0.793199 2.74775 1.52885 2.74775 1.98223 3.20114L3.49817 4.71689C3.61261 4.83112 3.79839 4.83112 3.91304 4.71689L8.01777 0.612077C8.47093 0.158686 9.20658 0.158686 9.65996 0.612077C9.87768 0.829802 10 1.12521 10 1.43308C10 1.74096 9.87768 2.03637 9.65996 2.25409L4.5266 7.38757Z" fill="white"/>
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
